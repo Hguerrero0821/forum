@@ -21,7 +21,7 @@ class ShowThreads extends Component
 
         return view('livewire.show-threads', [
             'categories' => $categories,
-            'threads' => $threads->get()
+            'threads' => $threads = $threads->get()
         ]);
 
     }
