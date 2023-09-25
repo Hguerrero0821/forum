@@ -43,7 +43,7 @@
 
 
             @foreach ($threads as $thread )
-            <div class="rounded-md bg=gradient-to-r from-slate-800 to-slate-900 hover:to-slate-800 mb-4">
+            <div class="rounded-md bg-gradient-to-r from-slate-800 to-slate-900 hover:to-slate-800 mb-4">
                 <div class="px-4 flex gap-4">
                     <div>
                         <img src="{{ $thread->user->avatar() }}" alt="{{ $thread->user->name }}" class="rounded-md">
