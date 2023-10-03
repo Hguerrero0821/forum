@@ -35,7 +35,9 @@
             </div>
         </div>
         <!-- Respuestas -->
-
+        @foreach ( $replies as $reply )
+            @livewire('show-reply', ['reply' => $reply], key('reply-'.$reply->id))
+        @endforeach
         <!-- Formulario de creacion de respuestas -->
         <form wire:submit.prevent="postReply">
             <input
